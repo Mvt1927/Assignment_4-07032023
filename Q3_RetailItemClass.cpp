@@ -9,7 +9,7 @@ const int col = 4;
 const int col_w = 25;
 
 void drawLine();
-void printRetailItem();
+void printInventoryItem();
 void printRetailItem(const RetailItem &rItem, const int &index);
 
 int main(int argc, char const *argv[])
@@ -22,7 +22,7 @@ int main(int argc, char const *argv[])
 
     drawLine();
 
-    printRetailItem();
+    printInventoryItem();
 
     drawLine();
 
@@ -41,7 +41,7 @@ void drawLine()
     cout << setw(col_w * col + (col + 1)) << "-" << endl;
     cout << setfill(' ');
 }
-void printRetailItem()
+void printInventoryItem()
 {
     cout << " " << setw(col_w) << left << "Item" << setw(col_w) << left << "Description" << setw(col_w) << left << "Units On Hand" << setw(col_w) << left << "Price" << endl;
 }
