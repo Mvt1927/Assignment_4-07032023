@@ -2,11 +2,29 @@
 
 using namespace std;
 
+/**
+ * @brief a class named Car
+ *
+ */
 class Car
 {
 private:
+    /**
+     * @brief An int that holds the car’s year model
+     *
+     */
     int yearModel;
+
+    /**
+     * @brief A string that holds the make of the car
+     *
+     */
     string make;
+
+    /**
+     * @brief An int that holds the car’s current speed.
+     *
+     */
     int speed;
 
 public:

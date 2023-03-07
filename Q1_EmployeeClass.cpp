@@ -10,7 +10,7 @@ const int col_w = 20;
 
 void drawLine();
 void printEmployee();
-void printEmployee(const Employee emp);
+void printEmployee(const Employee &emp);
 
 int main(int argc, char const *argv[])
 {
@@ -51,7 +51,7 @@ void printEmployee()
     cout << " " << setw(col_w) << left << "Name" << setw(col_w) << left << "ID Number" << setw(col_w) << left << "Department" << setw(col_w) << left << "Position" << endl;
 }
 
-void printEmployee(const Employee emp)
+void printEmployee(const Employee &emp)
 {
     cout << " " << setw(col_w) << left << emp.getName() << setw(col_w) << left << emp.getIdNumber() << setw(col_w) << left << emp.getDepartment() << setw(col_w) << left << emp.getPosition() << endl;
 }
